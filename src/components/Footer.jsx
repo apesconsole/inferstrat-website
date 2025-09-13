@@ -6,7 +6,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-4">
           <img
-            src="./logo.png" 
+            src="./images/logo.png" 
             alt="Inferstrat"
             className="mx-auto h-10 w-auto object-contain"
           />

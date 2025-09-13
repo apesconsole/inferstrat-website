@@ -5,7 +5,7 @@ export default function Home() {
     <section
       id="home"
       className="relative h-screen flex items-center justify-center text-center text-white"
-      style={{ backgroundImage: "url('./banner.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+      style={{ backgroundImage: "url('./images/banner.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
     >
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
       <div className="relative z-10">

@@ -37,7 +37,7 @@ export default function About() {
           {/* Square Image */}
           <div className="flex justify-center">
             <img
-              src="./9.jpg"
+              src="./images/9.jpg"
               alt="See Us In Action"
               className="rounded-2xl shadow-xl w-full max-w-md aspect-square object-cover"
             />
@@ -158,7 +158,7 @@ export default function About() {
           {/* Left Image */}
           <div>
             <img
-              src="./analytics.png"
+              src="./images/analytics.png"
               alt="Strategy"
               className="w-full h-80 object-cover rounded-2xl shadow-lg"
             />
@@ -203,7 +203,7 @@ export default function About() {
               {/* Top Image Section */}
               <div className="h-1/3 relative overflow-hidden rounded-t-xl">
                 <img
-                  src="./a.png"
+                  src="./images/a.png"
                   alt="Rich Qualitative Insights"
                   className="w-full h-full object-cover"
                 />
@@ -225,7 +225,7 @@ export default function About() {
               {/* Top Image Section */}
               <div className="h-1/3 relative overflow-hidden rounded-t-xl">
                 <img
-                  src="./b.png"
+                  src="./images/b.png"
                   alt="Look Beyond Surveys"
                   className="w-full h-full object-cover"
                 />
@@ -247,7 +247,7 @@ export default function About() {
               {/* Top Image Section */}
               <div className="h-1/3 relative overflow-hidden rounded-t-xl">
                 <img
-                  src="./c.png"
+                  src="./images/c.png"
                   alt="AI + Human Intelligence"
                   className="w-full h-full object-cover"
                 />
@@ -269,7 +269,7 @@ export default function About() {
               {/* Top Image Section */}
               <div className="h-1/3 relative overflow-hidden rounded-t-xl">
                 <img
-                  src="./d.png"
+                  src="./images/d.png"
                   alt="Not Just Data Dumps"
                   className="w-full h-full object-cover"
                 />
