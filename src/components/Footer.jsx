@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
 
         <p className="text-sm opacity-80">
-          © {new Date().getFullYear()} Inferstrat — Market Research & Consulting
+          © {new Date().getFullYear()} InferStrat — Market Research & Consulting
         </p>
       </footer>
 

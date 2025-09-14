@@ -9,7 +9,7 @@ export default function About() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-blue-800 mb-4">Inference Driven Strategy</h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-6">
-            At <span className="font-semibold text-blue-600">Inferstrat</span>, Discover the Power of Strategy <br />
+            At <span className="font-semibold text-blue-600">InferStrat</span>, Discover the Power of Strategy <br />
             We are a team of skilled analysts dedicated to helping businesses like yours unleash their full potential with innovative solutions.
           </p>
 
