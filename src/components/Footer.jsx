@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-4">
           <img
-            src="./logo.png" 
+            src="./images/logo.png" 
             alt="Inferstrat"
             className="mx-auto h-10 w-auto object-contain"
           />
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
 
         <p className="text-sm opacity-80">
-          © {new Date().getFullYear()} Inferstrat — Market Research & Consulting
+          © {new Date().getFullYear()} InferStrat — Market Research & Consulting
         </p>
       </footer>
 

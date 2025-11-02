@@ -6,22 +6,22 @@ export default function Services() {
     {
       title: "Social Intelligence",
       description: "Our unique social intelligence framework aims to end the dependence on survey and create a faster, accurate and affordable way for the company to interact with the consumers and to gain consumer insights.",
-      icon: "./e.png",
+      icon: "./images/e.png",
     },
     {
       title: "Market Research",
       description: "Our robust research methodologies and innovative process collects data from primary and secondary sources to gain insights into customer preferences, market trends, competitor activities etc",
-      icon: "./f.png",
+      icon: "./images/f.png",
     },
     {
       title: "Data Analytics & AI",
       description: "We use advanced data analytics and Al to leverage the vast amounts of data collected in manufacturing & infrastructure to transform it into valuable insights that drive strategic actions and business success.",
-      icon: "./g.png",
+      icon: "./images/g.png",
     },
     {
       title: "Technology",
       description: "We create customized applications to help companies streamline operations, automate tasks, improve communication, enhance productivity and drive innovation for sustainable growth and competitive advantage.",
-      icon: "./h.png",
+      icon: "./images/h.png",
     },
   ];
 
