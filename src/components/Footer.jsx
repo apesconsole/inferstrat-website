@@ -169,7 +169,7 @@ export default function Footer() {
                   business unless otherwise specified in an engagement document.
                 </p>
                 <p>
-                  For questions about these Terms, email: <a href="mailto:contact@inferstat.com" className="text-blue-600">contact@inferstat.com</a>
+                  For questions about these Terms, email: <a href="mailto:contact@inferstat.com" className="text-blue-600">contact@inferstrat.com</a>
                 </p>
               </section>
 
@@ -178,6 +178,20 @@ export default function Footer() {
                 legal advice. For contract drafting or legal questions, consult a
                 qualified attorney.
               </p>
+              <div className="mt-6">
+                <div className="inline-block rounded-full border-4 border-gradient-to-r from-purple-500 via-pink-500 to-red-500 transition-all duration-300">
+                    <button
+                      onClick={() => window.open("./terms.txt", "_blank")}
+                      className="px-5 py-2 rounded-full bg-transparent font-semibold
+                                text-transparent bg-clip-text
+                                bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
+                                hover:from-green-400 hover:via-blue-500 hover:to-purple-600
+                                transition-all duration-300"
+                    >
+                      Download File →
+                    </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
