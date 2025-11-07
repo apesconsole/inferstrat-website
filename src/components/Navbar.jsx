@@ -1,9 +1,27 @@
-import React from "react";
-import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons for hamburger
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Helper: navigate to a section even if you're not on "/"
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      // Navigate back to home and then scroll after a short delay
+      window.location.hash = "#/" + sectionId; 
+      window.location.href = "/#/"; // for HashRouter (GitHub Pages)
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      }, 400);
+    } else {
+      const section = document.getElementById(sectionId);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/50 backdrop-blur-xl shadow-lg z-50">
@@ -15,30 +33,30 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a
-            href="#home"
+          <button
+            onClick={() => handleNavClick("home")}
             className="text-gray-800 hover:text-blue-500 transition-colors"
           >
             Home
-          </a>
-          <a
-            href="#services"
+          </button>
+          <button
+            onClick={() => handleNavClick("services")}
             className="text-gray-800 hover:text-blue-500 transition-colors"
           >
             Services
-          </a>
-          <a
-            href="#about"
+          </button>
+          <button
+            onClick={() => handleNavClick("about")}
             className="text-gray-800 hover:text-blue-500 transition-colors"
           >
             About
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() => handleNavClick("contact")}
             className="text-gray-800 hover:text-blue-500 transition-colors"
           >
             Contact
-          </a>
+          </button>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -53,37 +71,18 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-white/90 backdrop-blur-lg shadow-lg px-6 py-4 space-y-4">
-          <a
-            href="#home"
-            className="block text-gray-800 hover:text-blue-500 transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Home
-          </a>
-          <a
-            href="#services"
-            className="block text-gray-800 hover:text-blue-500 transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Services
-          </a>
-          <a
-            href="#about"
-            className="block text-gray-800 hover:text-blue-500 transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </a>
-          <a
-            href="#contact"
-            className="block text-gray-800 hover:text-blue-500 transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </a>
+          {["home", "services", "about", "contact"].map((id) => (
+            <button
+              key={id}
+              onClick={() => handleNavClick(id)}
+              className="block text-gray-800 hover:text-blue-500 transition-colors w-full text-left"
+            >
+              {id.charAt(0).toUpperCase() + id.slice(1)}
+            </button>
+          ))}
+
         </div>
       )}
     </nav>
   );
 }
-

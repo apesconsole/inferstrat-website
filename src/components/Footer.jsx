@@ -25,7 +25,7 @@ export default function Footer() {
         to="/policy/privacy-policy"
         className="text-blue-400 hover:text-blue-300 underline ml-4"
       >
-        Pricay Policy
+        Privacy Policy
       </Link>
 
         <p className="text-sm opacity-80">
