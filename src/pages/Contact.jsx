@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6"
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaEnvelope } from "react-icons/fa6"
 
 export default function Contact() {
   return (
@@ -37,6 +37,10 @@ export default function Contact() {
             <a href="https://www.linkedin.com/company/inferstrat-private-limited/" target="_blank" rel="noopener noreferrer"
               className="p-4 bg-white rounded-full shadow hover:bg-blue-700 hover:text-white transition">
               <FaLinkedinIn className="text-2xl text-blue-700 hover:text-white transition" />
+            </a>
+            <a href="mailto:contactus@inferstrat.com" aria-label="Email Inferstrat"
+              className="p-4 bg-white rounded-full shadow hover:bg-green-600 hover:text-white transition">
+              <FaEnvelope className="text-2xl text-green-600 hover:text-white transition" />
             </a>
           </div>
         </div>
